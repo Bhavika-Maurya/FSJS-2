@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    max-width: 1440px;
+    margin:0px auto;
+}
+
+
+.navbar-container{
+    margin:30px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grow-list{
+    width:400px;
+}
+.grow-list .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+    right: 90px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;  
+}
+
+.grow-list .list >:first-child{
+font-weight: 500;
+}
+
+.navbar-container div img{
+    width: 88px;
+    height: 33px;
+    position: relative;
+    left:70px;
+}
+.button-group .nav-button{
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 200;
+    color:white;
+    background-color: #5955b3;
+    height: 40px;
+    width:110px;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    right:15px;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.banner-container > :first-child{
+    height: 450px;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    left:119px;
+}
+
+
+
+.banner-container div img{
+    height:450px;
+}
+
+.banner-container div .heading-text{
+    font-family: 'Poppins';
+    font-size: 45px;
+    font-weight: 600;
+    color:#3c2f60;
+    font-style: normal;
+    line-height: 1.2;
+    word-spacing: 10px;
+    position: relative;
+    top:35px;
+    
+}
+.banner-container div .heading-text span{
+    color:#5955b3;
+}
+    
+.banner-container div .description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    font-size: 15px;
+    position: relative;
+    bottom:15px;
+}
+
+.banner-container div  button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    color:white;
+    background-color: #5955b3;
+    height: 50px;
+    width:180px;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    bottom:35px;
+}
