@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background: url("./assets/bg.png");
+    background-size: cover;
+  
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070707;
+    color: rgb(255, 255, 255);
+    height: 70px;
+  }
+  
+  .navbar .grow-list .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 500px;
+    align-items: center;
+    position: relative;
+    right: 250px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem;
+  }
+  
+  .navbar .grow-list .list > :first-child::after {
+    content: "ˇ";
+    position: absolute;
+    left: 65px;
+    top:1px;
+    font-size:1.5rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+  
+  .navbar .line {
+    height: 42px;
+    width: 20px;
+    border-left: 1px solid rgb(250, 240, 240);
+    position: relative;
+    right: 70px;
+  }
+  
+  .navbar div .logo {
+    height: 28px;
+    width: 76px;
+    position: relative;
+    left: 70px;
+  }
+  
+  .container .navbar div .button-small{
+  background-color: #ba0cc5;
+  position:relative;
+  right:70px;
+  border:none;
+  height:40px;
+  width:150px;
+  border-radius:7px;
+  color:#fdf9f9;
+  font-family: 'Montserrat';
+  font-style: normal;
+  }
+  
+  section  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:300px;
+    width:700px;
+    margin : 75px auto;
+  }
+  .hero .hero-heading{
+    color:#fdf9f9;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align:center;
+  word-spacing: 8px;
+  }
+  .hero .hero-description{
+    text-align: center;
+    color:#fdf9f9;
+    font-family: 'Montserrat';
+  font-style: normal;
+  margin:10px 0px;
+  font-size: 1.3rem;
+  }
+  .hero .button-large{
+    background-color: #ba0cc5;
+    border:none;
+    height:50px;
+    width:250px;
+    border-radius:7px;
+    color:#fdf9f9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding:5px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top:40px;
+    
+  }
