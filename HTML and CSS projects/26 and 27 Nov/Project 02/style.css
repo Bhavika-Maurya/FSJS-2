@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1440px;
+  margin : 0px auto;
+  background-color: #f0f4f5;
+  overflow: hidden;
+}
+
+/*Navbar*/
+.navbar {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.navbar > :first-child {
+  position: absolute;
+  left: 50px;
+  height: 50px;
+}
+
+.navbar ul {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+}
+.navbar ul .list {
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.navbar ul > :first-child {
+  color: #41d399;
+}
+
+/* Hero Section */
+.hero {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .left-hero-section {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 45px;
+    position: relative;
+  }
+  .left-hero-section .topAngle {
+    position: absolute;
+    left: 0px;
+  }
+  .left-hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 30px 10px;
+    font-family: "Fjalla One", sans-serif;
+    line-height: 100px;
+    letter-spacing: 0.9px;
+  }
+  .left-hero-section p {
+    color: #5a5a5a;
+    font-size: bold;
+    font-size: 1rem;
+    margin: 0px 5px;
+  }
+  .left-hero-section button {
+    background-color: #19a76e;
+    border: none;
+    padding: 15px 45px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: "Fjalla One", sans-serif;
+    border-radius: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 70px;
+  }
+
+  .bottomAngle {
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+  }
+  .mouse {
+    position: absolute;
+    right: -50px;
+    bottom: 30px;
+  }
+  
+  .stethoscope {
+    height: 600px;
+    position: absolute;
+    right: -140px;
+    top: -50px;
+  }
+  .right-hero-section {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .green-box,
+  .yellow-box,
+  .doctor-img {
+    position: absolute;
+  }
+  
+  .green-box {
+    height: 500px;
+    top: 64px;
+    right: -50px;
+  }
+  .yellow-box {
+    height: 450px;
+    left: 140px;
+    top: 107px;
+  }
+  .doctor-img {
+    height: 600px;
+    top: -40px;
+  }
