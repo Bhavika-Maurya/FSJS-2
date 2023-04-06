@@ -1,12 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>VS Code Clone</title>
 </head>
-<body>
-    
+
+<body
+  class=" text-white w-[100vw] max-w-[1440px] 2xl:ml-[auto] 2xl:mr-[auto] font-[Segoe UI] flex flex-col overflow-x-hidden relative">
+  <!-- Navbar -->
+
+  <nav class="flex items-center justify-between fixed top-0 h-[48px] w-[1440px] bg-[#2c2c32] z-10">
+    <!-- Navbar Left Side Content -->
+    <p class="ml-[10px] text-[0.5rem]">*Eductional Purpose Only*</p>
+    <div class="flex justify-between items-center w-[750] absolute left-[110px]">
+      <div class="flex items-center justify-around w-[210px]">
+        <img class="w-[25px] cursor-pointer" src="./images/logo.png" alt="logo.png" />
+        <h3 class="cursor-pointer font-[Segoe UI] font-medium text-[1.1rem] not-italic mr-[10px]">
+          Visual Studio Code
+        </h3>
+      </div>
+      <div class="flex justify-between items-center w-[400px] font-medium text-[0.90rem] text-[#9d9d9d] cursor-pointer">
+        <li class="list-none hover:text-white">Docs</li>
+        <li class="list-none hover:text-white">Updates</li>
+        <li class="list-none hover:text-white">Blog</li>
+        <li class="list-none hover:text-white">API</li>
+        <li class="list-none hover:text-white">Extensions</li>
+        <li class="list-none hover:text-white">FAQ</li>
+        <li class="list-none hover:text-white">Learn</li>
+      </div>
+    </div>
+    <!-- Navbar Right Side Content -->
+    <div class="flex justify-around items-middle w-[300px] mr-[210px]">
+      <div class="h-[45px] w-[175px] bg-[#3d3d42] flex justify-start items-middle pl-[15px]">
+        <img class="w-[15px] cursor-pointer" src="./images/search.svg" alt="search.svg" />
+        <input type="text"
+          class="bg-[#3d3d42] w-[150px] pl-[10px] pr-[10px] placeholder:font-[Segoe UI] placeholder:font-thin placeholder:text-[0.83rem] placeholder:text-white focus:outline-0"
+          placeholder="Search Docs" />
+      </div>
+      <button class="h-[45px] w-[120px] flex justify-center items-center bg-[#0066b8] gap-[6px] hover:bg-[#00569A]">
+        <img class="w-[15px]" src="./images/download.svg" alt="download.svg" />
+        <h3 class="font-[Segoe UI] font-semibold text-[0.85rem] not-italic">
+          Download
+        </h3>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Nofifiv=cation alerts -->
+  <section id="alerts"
+    class="w-[100%] h-[40px] bg-[#25252b] flex justify-center gap-[10px]  items-center text-[0.87rem] pl-[39px] font-normal font-[Segoe UI] mt-[47px]">
+    <a class="text-[#0098ff] font-normal hover:underline" href="#">Educational Purpose Only </a>
+    <p  >
+       This VS Code Clone is made only for Educational Purpose as a part of iNeuron's FSJS 2.0
+    </p>
+  </section>
+  <!-- Homepage section -->
+  <section id="homePage" class="h-[630px] flex flex-row justify-around relative bg-[#2c2c32] t">
+    <!-- Homepage Left Side Text -->
+    <div id="info" class="flex flex-col justify-center items-center gap-[5px] ml-[84px]">
+      <div class="flex flex-col justify-center absolute top-[59px]">
+        <span class="font-[Segoe UI] font-light text-[3.2rem] not-italic text-[#fff] p-0 m-0">Code editing.</span>
+        <span
+          class="font-[Segoe UI] font-normal text-[3.2rem] not-italic text-[#fff] p-0 m-0 absolute top-[60px] left-[24px]">Redefined.</span>
+      </div>
+      <p class="font-[Segoe UI] font-normal text-[1.1rem] text-[rgba(255,255,255,.6)] absolute top-[198px]">
+        Free. Built on open source. Runs everywhere.
+      </p>
+      <div id="button" class="flex flex-row gap-[2px] relative top-[2px]">
+        <button
+          class="h-[65px] w-[220px] flex flex-col justify-center items-center bg-[#0066b8] gap-[3px] hover:bg-[#00569A]">
+          <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+            Download for Windows
+          </h3>
+          <p class="font-[Segoe UI] font-light text-[0.90rem] not-italic">
+            Stable Build
+          </p>
+        </button>
+        <div id="chevronDown"
+          class="h-[65px] w-[40px] flex justify-center items-center bg-[#0066b8] hover:bg-[#00569A] cursor-pointer">
+          <img class="w-[20px]" src="./images/chevronDown.svg" alt="" />
+        </div>
+      </div>
+      <div id="bottom-text"
+        class="h-[30px] w-[100%] bg-[#25252b] relative top-[12px] flex flex-row justify-center items-center rounded-lg gap-[4px] py-5">
+        <div id="triangle"
+          class="w-0 h-0 border-solid border-b-[#25252b] border-b-[10px] border-x-transparent border-x-[10px] border-t-0 z-2 absolute top-[-8px] right-[10px]">
+        </div>
+        <a class="text-[0.8rem] text-[#0098ff] font-normal hover:underline" href="#">Web</a>
+        <span class="text-[0.8rem] text-[rgba(255,255,255,.6)]">,</span>
+        <a class="text-[0.8rem] text-[#0098ff] font-normal hover:underline" href="#">Insiders edition</a>
+        <span class="text-[0.8rem] text-[rgba(255,255,255,.6)]">,</span>
+        <span class="text-[0.8rem] text-[rgba(255,255,255,.6)]">or</span>
+        <a class="text-[0.8rem] text-[#0098ff] font-normal hover:underline" href="#">other platforms</a>
+      </div>
+      <p class="relative top-[15px] text-[rgba(255,255,255,.6)] text-[0.70rem]">
+        By using VS Code, you agree to its
+      </p>
+      <a class="relative top-[15px] text-[0.6rem] text-[#0098ff] font-normal hover:underline" href="#">license and
+        privacy statement.</a>
+    </div>
+    <!-- Homepage Right Side Image -->
+    <div id="screenshot">
+      <img class="w-[740px] mr-[16px] mt-[27px]" src="./images/vscode-screenshot.png" alt="screenshot.png" />
+    </div>
+  </section>
+  <!-- Main Content -->
+  <section id="main-container" class="w-[100%] h-[3600px] bg-white flex flex-col">
+    <!-- Features -->
+    <div class="h-[200px] flex justify-center items-center w-[100%]">
+      <div class="w-[25%] flex flex-col justify-center items-center">
+        <a href="#icon-intellisense">
+          <div
+            class="bg-[url('./images/valueprops-top-sprite.svg')] bg-[length:20.6rem_10.4rem] bg-no-repeat h-[5rem] w-[5rem] hover:bg-[0rem_-5.29rem] transition-none">
+          </div>
+          <p class="text-black text-[1.2rem] text-[#444] font-medium font-[Segoe UI] hover:text-black">
+            Intelisense
+          </p>
+        </a>
+      </div>
+
+      <div class="w-[25%] flex flex-col justify-center items-center">
+        <a href="#icon-run-and-debug">
+          <div
+            class="bg-[url('./images/valueprops-top-sprite.svg')] bg-[-5.2rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat h-[5rem] w-[5rem] hover:bg-[-5.2rem_-5.29rem] transition-none">
+          </div>
+          <p
+            class="text-black text-[1.2rem] relative right-[32px] text-[#444] font-medium font-[Segoe UI] hover:text-black">
+            Run and Debug
+          </p>
+        </a>
+      </div>
+
+      <div class="w-[25%] flex flex-col justify-center items-center">
+        <a href="#icon-built-in-git">
+          <div
+            class="bg-[url('./images/valueprops-top-sprite.svg')] bg-[-10.4rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat h-[5rem] w-[5rem] hover:bg-[-10.4rem_-5.29rem] transition-none">
+          </div>
+          <p
+            class="text-black text-[1.2rem] relative right-[22px] font-medium font-[Segoe UI] text-[#444] hover:text-black">
+            Built-in-Git
+          </p>
+        </a>
+      </div>
+
+      <div class="w-[25%] flex flex-col justify-center items-center">
+        <a href="#icon-extensions">
+          <div
+            class="bg-[url('./images/valueprops-top-sprite.svg')] bg-[-15.6rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat h-[5rem] w-[5rem] hover:bg-[-15.6rem_-5.29rem] transition-none">
+          </div>
+          <p
+            class="text-black text-[1.2rem] text-[#444] font-medium font-[Segoe UI] relative right-[9px] hover:text-black">
+            Extensions
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- Client Reviews -->
+    <div id="reviews" class="w-[100%] h-[330px] bg-[#f5f5f5] mt-[90px] flex justify-around items-center">
+      <div id="box-1" class="width[25%] h-[70%] flex justify-end items-start">
+        <div>
+          <button class="h-[80px] w-[80px] font-bold text-[5rem] text-[#444] hover:opacity-75">
+            &#8249;
+          </button>
+        </div>
+        <div
+          class="h-[80px] w-[80px] bg-[url('./images/person-1.jpg')] bg-no-repeat bg-center bg-cover rounded-full mr-[15px] cursor-pointer">
+        </div>
+        <p class="text-[#444] h-[100%] w-[50%] text-[#444] font-normal font-[Segoe UI]">
+          <span class="cursor-pointer text-black font-bold hover:text-[#0066b8]">John Monn</span>
+          VS code does so many things right. I’m constantly impressed by the
+          UX, and customizing workspace / user preferences is no exception.
+          🙌🏼💯 It just keeps getting better ❤️.
+        </p>
+      </div>
+
+      <div id="box-2" class="width[25%] h-[70%] flex justify-center items-start">
+        <div
+          class="h-[80px] w-[80px] bg-[url('./images/person-2.jpg')] bg-no-repeat bg-center bg-cover rounded-full mr-[15px] cursor-pointer">
+        </div>
+        <p class="text-[#444] h-[100%] w-[50%]">
+          <span class="cursor-pointer text-black font-bold hover:text-[#0066b8]">
+            Marry Marry</span>
+          VS Code will have deep remote development. You can connect to a
+          container running a different OS and use any VS Code plugins,
+          linting, debugging for that environment. 🔥🔥🔥
+        </p>
+      </div>
+
+      <div id="box-3" class="width[25%] h-[70%] flex justify-start items-start">
+        <div
+          class="h-[80px] w-[80px] bg-[url('./images/person-3.jpg')] bg-no-repeat bg-center bg-cover rounded-full mr-[15px] cursor-pointer">
+        </div>
+        <p class="text-[#444] h-[100%] w-[50%]">
+          <span class="cursor-pointer text-black font-bold hover:text-[#0066b8]">Kaitlyn Ron</span>
+          VS Code is my most used and favorite editor. I love being able to
+          customize the editor - changing the layout, the icons, fonts and
+          color scheme is so easy!.
+        </p>
+        <div>
+          <button class="h-[80px] w-[80px] font-bold text-[5rem] text-[#444] hover:opacity-75">
+            &#8250;
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Home-Intellisense -->
+    <div class="w-[100%] h-[450px] flex justify-around items-center mt-[60px]">
+      <img class="w-[370px]" src="./images/home-intellisense.svg" alt="" />
+      <div class="w-[47%] h-[40%] flex flex-col justify-between relative right-[126px] top-[-50px]">
+        <p class="text-[#444] font-light font-[Segoe UI] text-[1.8rem] mb-[30px]">
+          Meet IntelliSense.
+        </p>
+        <p class="text-[#444] font-normal font-[Segoe UI] text-[1.1rem] leading-9">
+          Go beyond syntax highlighting and autocomplete with IntelliSense,
+          which provides smart completions based on variable types, function
+          definitions, and imported modules.
+        </p>
+      </div>
+    </div>
+    <!-- Home-Debug -->
+    <div class="w-[100%] h-[450px] bg-[#f5f5f5] flex justify-around items-center mt-[60px]">
+      <div class="w-[50%] h-[35%] flex flex-col justify-between relative top-[-50px]">
+        <p class="text-[#444] font-light font-[Segoe UI] text-[1.8rem] mb-[30px]">
+          Print statement debugging is a thing of the past
+        </p>
+        <p class="text-[#444] font-normal font-[Segoe UI] text-[1.1rem] leading-9">
+          Debug code right from the editor. Launch or attach to your running
+          apps and debug with break points, call stacks, and an interactive
+          console.
+        </p>
+      </div>
+      <img class="w-[370px] relative right-[100px]" src="./images/home-debug.svg" alt="" />
+    </div>
+    <!-- Home-Git-in-built -->
+    <div class="w-[100%] h-[450px] flex justify-around items-center mt-[60px]">
+      <img class="w-[370px]" src="./images/home-git.svg" alt="" />
+      <div class="w-[48%] h-[40%] flex flex-col justify-between relative right-[126px] top-[-50px]">
+        <p class="text-[#444] font-light font-[Segoe UI] text-[1.8rem] mb-[30px]">
+          Git commands built-in.
+        </p>
+        <p class="text-[#444] font-normal font-[Segoe UI] text-[1.1rem] leading-9">
+          Working with Git and other SCM providers has never been easier.
+          Review diffs, stage files, and make commits right from the editor.
+          Push and pull from any hosted SCM service.
+        </p>
+      </div>
+    </div>
+    <!-- Home-Extensible and customizable-->
+    <div class="w-[100%] h-[450px] bg-[#f5f5f5] flex justify-around items-center mt-[60px]">
+      <div class="w-[48%] h-[35%] flex flex-col justify-between relative top-[-50px]">
+        <p class="text-[#444] font-light font-[Segoe UI] text-[1.8rem] mb-[30px]">
+          Extensible and customizable.
+        </p>
+        <p class="text-[#444] font-normal font-[Segoe UI] text-[1.1rem] leading-9">
+          Want even more features? Install extensions to add new languages,
+          themes, debuggers, and to connect to additional services. Extensions
+          run in separate processes, ensuring they won't slow down your
+          editor.
+          <span class="text-[#0098ff] hover:underline cursor-pointer">Learn more about extensions.</span>
+        </p>
+      </div>
+      <img
+        class="w-[370px] relative right-[100px] cursor-pointer hover:scale-110 hover:trasition-all hover: ease-in-out hover: duration-500"
+        src="./images/Hundreds-of-Extensions.png" alt="" />
+    </div>
+
+    <!-- Home-deploy -->
+    <div class="w-[100%] h-[450px] flex justify-around items-center mt-[60px]">
+      <img class="w-[370px]" src="./images/home-azure.svg" alt="" />
+      <div class="w-[48%] h-[40%] flex flex-col justify-between relative right-[126px] top-[-50px]">
+        <p class="text-[#444] font-light font-[Segoe UI] text-[1.8rem] mb-[30px]">
+          Deploy with confidence and ease
+        </p>
+        <p class="text-[#444] font-normal font-[Segoe UI] text-[1.1rem] leading-9">
+          With
+          <span class="text-[#0098ff] hover:underline cursor-pointer">Microsoft Azure </span>you can deploy and host
+          your React, Angular, Vue, Node, Python (and
+          more!) sites, store and query relational and document based data,
+          and scale with serverless computing, all with ease,
+          <span class="text-[#0098ff] hover:underline cursor-pointer">
+            all from within VS Code.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Supported Platforms -->
+    <div class="w-[100%] h-[700px] bg-[#f5f5f5] flex justify-center items-center mt-[60px]">
+      <div class="w-[70%] h-[100%]  flex flex-col justify-center items-center gap-[20px]">
+        <p class="text-[#444] text-[2.0rem] font-light font-[Segoe UI] mb-[30px]">
+          VS Code for
+        </p>
+
+        <div class="text-black w-[100%] flex flex-row justify-around items-center">
+          <!-- Supported Languages -->
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/javascript.svg" alt="js.svg" />
+            <p class=" text-[#444] text-[1.1rem]">JavaScript</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/python.svg" alt="python.svg" />
+            <p class=" text-[#444] text-[1.1rem]">Python</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/java.svg" alt="java.svg" />
+            <p class=" text-[#444] text-[1.1rem]">Java</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/markdown.svg" alt="markdown.svg" />
+            <p class=" text-[#444] text-[1.1rem]">Markdown</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/typescript.svg" alt="ts.svg" />
+            <p class=" text-[#444] text-[1.1rem]">TS</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/cpp.svg" alt="c/c++.svg" />
+            <p class=" text-[#444] text-[1.1rem]">C/C++</p>
+          </div>
+        </div>
+        <div class="text-black w-[100%] flex flex-row justify-around items-center">
+          <!-- Supported Languages -->
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/json.svg" alt="json.svg" />
+            <p class=" text-[#444] text-[1.1rem]">JSON</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/powershell.svg" alt="powersell.svg" />
+            <p class=" text-[#444] text-[1.1rem]">Powershell</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/html.svg" alt="html.svg" />
+            <p>HTML/CSS</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/csharp.svg" alt="markdown.svg" />
+            <p class=" text-[#444] text-[1.1rem]">C#</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/php.svg" alt="php.svg" />
+            <p class=" text-[#444] text-[1.1rem]">PHP</p>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <img class="h-[35px]" src="./images/yaml.svg" alt="yami.svg" />
+            <p class=" text-[#444] text-[1.1rem]">YAMI</p>
+          </div>
+        </div>
+
+        <p class="text-[#0098ff] font-normal text-[1.1rem] hover:underline cursor-pointer">
+          and many more languages on the Marketplace...
+        </p>
+        <button
+          class=" mt-[30px] h-[60px] w-[220px] flex justify-center items-center bg-[#0066b8] gap-[6px] hover:bg-[#00569A]">
+          <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+            Get Started Now
+          </h3>
+        </button>
+      </div>
+    </div>
+
+    <!-- Available OS -->
+    <div class=" w-[100%] h-[600px]  flex flex-col justify-center items-center ">
+      <!-- operating systems -->
+      <div class="w-[80%] h-[90%]  flex flex-row justify-around items-center">
+
+        <!-- Windows -->
+        <div class=" h-[290px] flex flex-col justify-between items-center   ">
+          <img class="w-[90px]" src="./images/windows-logo.png" alt="window.png">
+          <button
+            class="h-[70px] w-[240px] flex flex-col justify-center items-center bg-[#0066b8] gap-[5px]  hover:bg-[#00569A]">
+            <div class=" flex flex-row justify-around items-center gap-[10px]">
+              <img class="w-[15px]" src="./images/download.svg" alt="download.svg" />
+              <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+                Windows
+              </h3>
+            </div>
+            <p class="font-[Segoe UI] font-semibold text-[0.7rem] not-italic">Winows 8, 10, 11</p>
+          </button>
+          <div class="text-black flex flex-row justify-center font-[Segoe UI]">
+            <p class="w-[120px]  text-[#444] font-medium font-[Segoe UI] ">User Installer System Installer .zip</p>
+            <div class=" w-[100px] grid grid-cols-3 grid-rows-3 gap-[3px] ">
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]  hover:bg-[#00569A] ">Arm64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A]  ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]  hover:bg-[#00569A] ">Arm64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A]  ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]   hover:bg-[#00569A] ">Arm64</span>
+            </div>
+          </div>
+        </div>
+        <!-- Linux -->
+        <div class=" flex flex-col justify-between items-center  h-[290px]  ">
+          <img class="w-[90px]" src="./images/linux-logo.png" alt="linux.png">
+          <div class="flex flex-row gap-[5px] relative top-[4px] ">
+            <button
+              class="h-[70px] w-[150px] flex flex-col justify-center items-center bg-[#0066b8] gap-[5px]  hover:bg-[#00569A]">
+              <div class=" flex flex-row justify-around items-center gap-[20px]">
+                <img class="w-[15px]" src="./images/download.svg" alt="download.svg" />
+                <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+                  .deb
+                </h3>
+              </div>
+              <p class="font-[Segoe UI] font-semibold text-[0.8rem] not-italic">Debian,Ubuntu</p>
+            </button>
+            <button
+              class="h-[70px] w-[150px] flex flex-col justify-center items-center bg-[#0066b8] gap-[5px]  hover:bg-[#00569A]">
+              <div class=" flex flex-row justify-around items-center gap-[20px]">
+                <img class="w-[15px]" src="./images/download.svg" alt="download.svg" />
+                <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+                  .rpm
+                </h3>
+              </div>
+              <p class="font-[Segoe UI] font-semibold text-[0.8rem] not-italic">Red Hat, Fedora, SUSE</p>
+            </button>
+
+          </div>
+
+
+          <div class="text-black flex flex-row gap-[7px] justify-center font-[Segoe UI] relative top-[30px]">
+            <div class="flex flex-col ">
+              <span class=" text-[#444] font-medium font-[Segoe UI] ">.deb </span>
+              <span class=" text-[#444] font-medium font-[Segoe UI] ">.rpm </span>
+              <span class=" text-[#444] font-medium font-[Segoe UI] ">.tar.gz </span>
+              <span class=" text-[#444] font-medium font-[Segoe UI] ">Snap </span>
+            </div>
+
+            <div class=" w-[100px] grid grid-cols-3 grid-rows-4 gap-[3px] ">
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]  hover:bg-[#00569A] ">Arm64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A]  ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]  hover:bg-[#00569A] ">Arm64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A]  ">x64</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center  hover:bg-[#00569A] ">x86</span>
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[40px]  hover:bg-[#00569A]  ">Arm64</span>
+
+              <span
+                class=" cursor-pointer pt-[3px] bg-[#0066b8] text-white  text-[0.7rem] text-center w-[70px]  hover:bg-[#00569A]  ">Snap
+                Store</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apple -->
+        <div class=" flex flex-col justify-between items-center  h-[290px]  ">
+          <img class="w-[90px] relative top-[-15px]  " src="./images/apple-logo.svg" alt="apple.png">
+          <button
+            class="h-[70px] w-[240px] flex flex-col justify-center items-center bg-[#0066b8] gap-[5px]  hover:bg-[#00569A] relative top-[-35px]">
+            <div class=" flex flex-row justify-around items-center gap-[10px]">
+              <img class="w-[15px]" src="./images/download.svg" alt="download.svg" />
+              <h3 class="font-[Segoe UI] font-semibold text-[1.1rem] not-italic">
+                Mac
+              </h3>
+            </div>
+            <p class="font-[Segoe UI] font-semibold text-[0.7rem] not-italic">macOS 10.11+</p>
+          </button>
+          <div class="text-black flex flex-row justify-center gap-[10px] font-[Segoe UI] relative top-[-60px]">
+            <p class="  text-[#444] font-medium font-[Segoe UI] ">.zip</p>
+            <div class="] flex  gap-[3px] ">
+              <span
+                class=" cursor-pointer  bg-[#0066b8] text-white  text-[0.7rem] px-[5px] py-[3px] text-center  hover:bg-[#00569A] ">Universal</span>
+              <span
+                class=" cursor-pointer  bg-[#0066b8] text-white  text-[0.7rem] px-[5px] py-[3px] text-center  hover:bg-[#00569A] ">Intel
+                chip</span>
+              <span
+                class=" cursor-pointer  bg-[#0066b8] text-white  text-[0.7rem] px-[5px] py-[3px] text-center  hover:bg-[#00569A] ">Apple
+                silicon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LICENSE and TERMS -->
+    <div class="w-[100%] h-[600px] bg-[#f5f5f5] flex flex-col justify-around items-center mt-[60px] ">
+      <div class=" w-[90%] flex flex-row justify-around items-center ">
+        <div class="flex flex-col justify-center items-center gap-[5px]  w-[400px] ">
+          <h2 class="text-[#444] text-[1.4rem] font-semibold ">Want new features sooner?</h2>
+          <p class="text-[#444] text-[1.2rem] "> Get the <span
+              class="text-[#0066b8] font-normal text-[1.1rem] hover:underline cursor-pointer">Insiders build </span>
+            instead.</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[5px]  w-[400px]">
+          <h2 class="text-[#444] text-[1.4rem] font-semibold w-[300px] text-center">Use <span
+              class="text-[#0066b8] font-semibold text-[1.3rem] hover:underline cursor-pointer">vscode.dev</span> for
+            quick edits online!</h2>
+          <p class="text-[#444] text-[1.2rem] "> GitHub, Azure Repos, and local files.</p>
+
+        </div>
+      </div>
+
+
+      <div class="w-[60%] flex flex-col justify-center items-center gap-[20px]">
+        <h2 class="text-[#444] text-[0.9rem] font-semibold">LICENSE AND PRIVACY TERMS</h2>
+        <p class="text-[#444] text-[0.8rem] leading-9 text-center">By downloading and using Visual Studio Code, you
+          agree to the <span class="text-[#0066b8] font-normal text-[0.8rem] hover:underline cursor-pointer">license
+            terms</span> and <span
+            class="text-[#0066b8] font-normal text-[0.8rem] hover:underline cursor-pointer">privacy statement</span>.VS
+          Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer
+          not to have this data sent please go see <span
+            class="text-[#0066b8] font-normal text-[0.8rem] hover:underline cursor-pointer">How to Disable Crash
+            Reporting</span> to learn how to disable it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="h-[120px] w-[100%] flex flex-row justify-around items-start  bg-[#2c2c32] t">
+    <!-- FOOTER LEFT SIDE -->
+    <div
+      class="w-[35%] h-[80px] flex flex-row justify-around items-center text-white font-normal font-[Segoe UI] relative ">
+      <span class="text-[0.9rem]">Hello from Seatle</span>
+      <a href="#" class="text-[0.9rem] hover:text-[#dd99ff]">Follow@Code</a>
+      <div class="flex gap-[12px]">
+        <div class="  w-[60px]  bg-white rounded-[7px] text-[#444] font-normal font-[Segoe UI]  ">
+          <a href="#" class="flex  flex-row  justify-around">
+            <img src="./images/github.svg" alt="" class="w-[20px]">
+            <span class=" font-[Segoe UI] font-semibold  text-[0.9rem] "> Star </span>
+          </a>
+        </div>
+        <div class="w-[60px] px-[3px]  bg-white rounded-[7px] text-[#444] font-semibold font-[Segoe UI] text-[0.8rem]">
+          <a href="#" class="hover:text-green-500 flex justify-center items-center">145,236</a></div>
+      </div>
+    </div>
+    <div id="triangle2"
+      class="w-0 h-0 border-solid border-r-white border-r-[6px] border-y-transparent border-y-[6px] border-l-0 absolute left-[474px] bottom-[74px]">
+    </div>
+ <!-- FOOTER RIGHT SIDE -->
+    <div class="w-[35%] h-[80px]  flex flex-row justify-around items-center ">
+      <li class="list-none cursor-pointer text-[0.8rem] hover:text-[#dd99ff] ">Support</li>
+      <li class="list-none cursor-pointer text-[0.8rem] hover:text-[#dd99ff] "> Privacy</li>
+      <li class="list-none cursor-pointer text-[0.8rem] hover:text-[#dd99ff] "> Terms of Use</li>
+      <li class="list-none cursor-pointer text-[0.8rem] hover:text-[#dd99ff] ">License</li>
+      <li class="list-none text-[0.8rem] mt-[20px]">
+        <img src="./images/microsoft-logo.png" alt="" class="w-[100px]">
+        © 2022 Microsoft
+      </li>
+    </div>
+  </footer>
 </body>
+
 </html>
