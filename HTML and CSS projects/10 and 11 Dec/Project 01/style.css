@@ -1,4 +1,4 @@
-/*******************CSS Reset**************************/
+/*CSS Reset*/
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@
     overflow-x: hidden;
   }
   
-  /****************************Utility Classes***************************/
+  /*Utility Classes*/
   #hamburger-icon {
     display: none;
   }
@@ -52,7 +52,7 @@
     scale: 1.1;
   }
   
-  /***********************Header and Navbar Section*********************/
+  /*Header and Navbar Section*/
   
   header {
     width: 100%;
@@ -142,7 +142,7 @@
     overflow-x: hidden;
   }
   
-  /******************************Hero Left Section**************************/
+  /*Hero Left Section*/
   
   .hero-left-section {
     margin-left: 80px;
@@ -258,7 +258,7 @@
     font-family: "Manrope", sans-serif;
   }
   
-  /******************************Hero Right Section**************************/
+  /*Hero Right Section*/
   .hero-right-section {
     position: absolute;
     right: 0px;
@@ -281,7 +281,7 @@
     left: 184px;
   }
   
-  /*********************Section Logos************************/
+  /*Section Logos*/
   .logos {
     width: 100%;
     padding: 100px 20px;
@@ -293,7 +293,7 @@
     flex-wrap: wrap;
   }
   
-  /************************Section Services***************************/
+  /*Section Services*/
   
   .services {
     width: 100%;
@@ -304,7 +304,7 @@
     padding-bottom: 100px;
   }
   
-  /***********************Services top side content*********************/
+  /*Services top side content*/
   .sevices-top-content {
     width: 100%;
     margin-top: 100px;
@@ -344,7 +344,7 @@
     word-spacing: 4px;
   }
   
-  /***********************Services bottom side content******************/
+  /*Services bottom side content*/
   .sevices-bottom-content {
     width: 100%;
     height: 50%;
@@ -423,7 +423,7 @@
     text-align: center;
   }
   
-  /*****************************Card Choices Section******************************/
+  /*Card Choices Section*/
   .card-choices {
     padding-top: 80px;
     width: 100%;
@@ -468,7 +468,7 @@
     top: -130px;
   }
   
-  /************************************Customer Review Section**************************************/
+  /*Customer Review Section*/
   .customer-review {
     padding-top: 100px;
     padding-bottom: 140px;
@@ -603,7 +603,7 @@
     cursor: pointer;
   }
   
-  /******************************* Banner Section ********************************/
+  /* Banner Section */
   .banner {
     width: 100%;
     background-color: #141212f5;
@@ -677,12 +677,11 @@
     top: 0px;
   }
   
-  /*********************************Footer***********************************/
+  /*Footer*/
   .footer {
     padding-left: 120px;
     width: 100%;
-   padding:100px 50px;
-    /* border:2px solid yellow; */
+    padding:100px 50px;
     background-color: #141212f5;
     display: flex;
     flex-direction: row;
@@ -700,10 +699,10 @@
     color: #d1cfcf;
   }
   
-  /********************************Responsiveness using Media Queries*****************************/
+  /*Responsiveness using Media Queries*/
   
   @media only screen and (max-width: 980px) {
-    /***********************Header and Navbar Section*********************/
+    /*Header and Navbar Section*/
 
     nav {
       width: 100%;
@@ -721,7 +720,6 @@
     }
     .hero-left-section {
       position: static;
-      /* border: 2px solid red; */
       width: 100%;
       position: absolute;
       padding: 5%;
@@ -731,13 +729,11 @@
     .hero-left-section>h1{
       font-size: 4rem;
       width:100%;
-      /* border: 1px solid green; */
     }
     .hero-left-section>p{
       width:80%;
     }
     .hero-right-section {
-      /* border: 2px solid white; */
       position: static;
       justify-content: center;
       height: 40vh;
@@ -771,14 +767,12 @@
     .left-side-text {
       width:100%;
       text-align: center;
-      /* border: 1px solid rgb(201, 184, 184); */
     }
     .right-side-text{
       padding: 0;
       margin: 0;
       width:100%;
       text-align: center;
-      /* border: 1px solid red; */
       position: static;
       padding: 20px;
     }
@@ -797,23 +791,20 @@
   }
   
   @media only screen and (max-width: 675px) {
-    /***********************Header and Navbar Section*********************/
+    /*Header and Navbar Section*/
     header {
       justify-content: space-around;
-      /* border:1px solid red; */
       padding: 30px 0px;
     }
     nav {
       flex-direction: column;
       gap: 50px;
       align-items: center;
-      /* border:1px solid red; */
       padding: 25px 0px;
       display: none;
     }
     nav > ul {
       flex-direction: column;
-      /* border:1px solid red; */
       font-size: 1.4rem;
     }
     .right-side-item {
@@ -830,7 +821,6 @@
       top: 51px;
       height: 25px;
       width: 70px;
-      /* border: 2px solid red; */
       background-size: cover;
     }
   
@@ -885,13 +875,11 @@
       gap: 20px;
       position: relative;
       margin-left: 15px;
-      /* border: 2px solid red; */
       width: 100%;
     }
     
     .get-started-btn > span {
       font-size: 0.8rem;
-      /* border: 2px solid red; */
     }
     .arrow-btn{
       width:10%;
@@ -906,7 +894,6 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      /* border:1px solid red; */
       gap:0px;
     }
     
@@ -956,7 +943,6 @@
     font-size: 2rem;
    }
    .banner > .get-started-btn{
-    /* border:2pxsolid rgb(55, 104, 9); */
     width:40%;
     left:20%;
    }

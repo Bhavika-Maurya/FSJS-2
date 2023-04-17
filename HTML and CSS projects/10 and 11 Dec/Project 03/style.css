@@ -1,11 +1,10 @@
-/****************************CSS RESET****************************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
   }
-  /*************************Declaring CSS Variables*****************/
+  /*Declaring CSS Variables*/
   :root {
     --tomato: #f4694c;
     --gray: #776769;
@@ -18,7 +17,7 @@
     --red: #ce1919;
   }
   
-  /**************************Utility Classes******************************/
+  /*Utility Classes*/
   .btn {
     border: none;
     background-color: transparent;
@@ -61,7 +60,7 @@
     gap: 0.5em;
   }
   
-  /****************************body**************************************/
+  /*body*/
   body {
     max-width: 1400px;
     margin: 0 auto;
@@ -83,7 +82,7 @@
     padding-bottom: 3em;
   }
   
-  /***************************Navbar************************************/
+  /*Navbar*/
   nav {
     padding: 2em 5em;
     display: flex;
@@ -125,7 +124,7 @@
     background-color: transparent;
   }
   
-  /*****************Hero-Section***************/
+  /*Hero-Section*/
   .hero {
     display: flex;
     align-items: center;
@@ -209,7 +208,7 @@
     align-self: flex-end;
   }
   
-  /*********************************Popular-War-Games-Section********************************/
+  /*Popular-War-Games-Section*/
   .popular-war-games {
     padding: 7em 2em;
     display: flex;
@@ -281,7 +280,7 @@
     font-size: 0.9rem;
   }
   
-  /***********************************Explore More Section********************************/
+  /*Explore More Section*/
   .explore-section {
     display: flex;
     justify-content: center;
@@ -337,7 +336,7 @@
     font: 0.8rem;
   }
   
-  /******************Recommendation Section**********/
+  /*Recommendation Section*/
   .recommendation {
     width: 100%;
     display: flex;
@@ -420,7 +419,7 @@
     padding: 1em 2em;
   }
   
-  /***************************Most Played Games****************************/
+  /*Most Played Games*/
   .most-palyed-games-section {
     padding: 4em 6em 4em 0;
     background-color: var(--black);
@@ -473,7 +472,7 @@
     align-self: flex-end;
   }
   
-  /***********************Get Started Section**************************/
+  /*Get Started Section*/
   .get-started-section {
     display: flex;
     flex-direction: column;
@@ -498,7 +497,7 @@
     font-size: 1rem;
   }
   
-  /*****************************Footer***************************/
+  /*Footer*/
   footer {
     display: flex;
     flex-direction: column;
@@ -556,7 +555,7 @@
     color: var(--red);
   }
   
-  /**********************Media Queries***************************/
+  /*Media Queries*/
   @media screen and (max-width: 1190px) {
     .recom-container {
       justify-content: center;

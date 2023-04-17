@@ -3,10 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border:2px solid red; */
   }
   
-  /****************************Utility Classes**************************/
+  /*Utility Classes*/
   .btn {
     border: none;
     font-family: "Manrope", sans-serif;
@@ -19,17 +18,15 @@
     margin: 0 auto;
     width: 100vw;
     max-width: 1440px;
-    /* border: 2px solid red; */
     font-family: "Manrope", sans-serif;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
   }
   
-  /*********************************Navbar***********************************/
+  /*Navbar*/
   header {
     width: 100%;
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +47,6 @@
   
   nav {
     width: 80%;
-    /* border: 1px solid pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +87,7 @@
     background-color: #ffffff;
   }
   
-  /*********************************Hero Section********************************/
+  /*Hero Section*/
   .hero {
     width: 100%;
     background-color: #111010;
@@ -108,14 +104,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid white; */
     width: 50%;
     gap: 2rem;
-    /* border: 1px solid red; */
   }
   
   .hero-left-section > h1 {
-    /* border: 1px solid red; */
     font-size: 3.3rem;
   }
   
@@ -126,7 +119,6 @@
     color: #969292;
     font-size: 1.1rem;
     padding-right: 3rem;
-    /* border: 1px solid green; */
   }
   
   .hero-btn-section {
@@ -135,7 +127,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
-    /* border: 1px solid yellow; */
   }
   
   .hero-btn-section > .btn {
@@ -164,13 +155,12 @@
   
   .hero-right-section {
     width: 50%;
-    /* border: 1px solid pink; */
   }
   .group-img {
     width: 90%;
   }
   
-  /********************************Logo Section******************************/
+  /*Logo Section*/
   .logo-section {
     background-color: #1d1c1c;
     display: flex;
@@ -181,13 +171,12 @@
     gap: 5rem;
   }
   
-  /********************************Services Section***************************/
+  /*Services Section*/
   .service-section {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
     padding: 7rem 7rem;
   }
   .services-container {
@@ -203,7 +192,6 @@
     text-align: center;
     color: #969292;
     font-size: 1.1rem;
-    /* border: 2px solid yellow; */
     padding: 0 22rem;
     line-height: 1.8rem;
   }
@@ -214,6 +202,7 @@
     margin-top: 5rem;
     gap: 4rem;
   }
+
   .services-card {
     border: 2px solid #969292b2;
     border-radius: 32px;
@@ -253,10 +242,9 @@
     color: #111010;
   }
   
-  /***************************Features-Section******************************/
+  /*Features-Section*/
   
   .features {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -265,6 +253,7 @@
     gap: 5rem;
     padding: 2rem 0 7rem 0;
   }
+
   .features-heading {
     font-size: 2rem;
     align-self: flex-start;
@@ -275,13 +264,11 @@
     display: flex;
     width: 90%;
     gap: 3rem;
-    /* border: 2px solid green; */
   }
   
   .left-side-features {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid rgb(149, 175, 4); */
     width: 100%;
     gap: 1rem;
   }
@@ -311,7 +298,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border: 1px solid rgb(107, 14, 29); */
     width: 70%;
     background-color: #111010;
     padding: 2rem 1.5rem;
@@ -336,7 +322,7 @@
     cursor: pointer;
   }
   
-  /*******************************Price and Subscription plan Section*******************************/
+  /*Price and Subscription plan Section*/
   .subs-plan {
     background-color: #111010;
     display: flex;
@@ -363,7 +349,6 @@
     gap: 2rem;
     padding: 5rem 5rem;
     color: #ffffff;
-    /* border: 2px solid tomato; */
   }
   .subs-plan-card {
     display: flex;
@@ -398,18 +383,18 @@
   .given-benefits-container {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid yellow; */
     justify-content: flex-start;
     color: #5a5656;
     gap: 1.5rem;
   }
+
   .given-benefits {
     display: flex;
-    /* border: 2px solid black; */
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
   }
+
   .subs-plan-card > button {
     background-color: #0c8bfd;
     padding: 1.1rem 0;
@@ -432,7 +417,7 @@
     color: #d6c9c9;
   }
   
-  /************************************* Customer Review Section**********************************/
+  /*Customer Review Section*/
   .review {
     display: flex;
     flex-direction: column;
@@ -442,7 +427,6 @@
     gap: 3rem;
   }
   .review-heading {
-    /* border:2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -460,7 +444,6 @@
     color: #5a5656a4;
   }
   .review-card-container {
-    /* border:2px solid rgb(37, 179, 148); */
     display: flex;
     gap: 2rem;
   }
@@ -519,7 +502,7 @@
     position: absolute;
   }
   
-  /********************************Sine-up form section**************************/
+  /*Sine-up form section*/
   .sine-up-section {
     background-color: #070707;
     color: #ffffff;
@@ -527,7 +510,6 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 5rem;
-    /* border: 2px solid red; */
     gap: 4rem;
   }
   .sine-up-section > h1 {
@@ -543,7 +525,6 @@
     align-items: center;
     gap: 2rem;
     border-radius: 30px;
-    /* border:2px solid rgb(20, 196, 34); */
     flex-wrap: wrap;
   }
   .sine-up-form > input {
@@ -577,7 +558,7 @@
   
   
   
-  /********************************Footer**********************************************/
+  /*Footer*/
   footer {
     background-color: #070707;
     display: flex;
@@ -620,7 +601,8 @@
     color:#ffffff;
     cursor: pointer;
   }
-  /****************************Responsive Behaviour*****************************/
+
+  /*Responsive Behaviour*/
   @media screen and (max-width: 1300px) {
     .service-section {
       padding: 2rem;
@@ -645,8 +627,6 @@
   }
   
   
-  
-  /***************************************************************************************/
   @media screen and (max-width: 1075px) {
     nav {
       width: 100%;
@@ -683,7 +663,7 @@
     }
   }
   
-  /************************************************************************************************/
+ 
   @media screen and (max-width: 970px) {
     .features-heading {
       align-self: flex-start;
@@ -714,7 +694,7 @@
     }
   }
   
-  /***********************************************************************************************/
+
   @media screen and (max-width: 800px) {
     nav {
       width: 100%;
@@ -728,7 +708,6 @@
     }
     .hero-left-section {
       width: 100%;
-      /* border: 1px solid pink; */
       padding: 0;
       justify-content: center;
     }
@@ -752,7 +731,6 @@
     }
   }
   
-  /*******************************************************************************************/
   
   @media screen and (max-width: 635px) {
     .left-features-items {
@@ -790,7 +768,7 @@
       justify-content: center;
     }
   }
-  /*******************************************************************************************/
+
   
   @media screen and (max-width: 518px) {
     .list-items-container {
@@ -842,7 +820,7 @@
       margin: 0;
     }
   }
-  /****************************************************************************************/
+  
   
   @media screen and (max-width: 420px) {
     .hero-left-section > h1 {
@@ -867,23 +845,3 @@
     }
   }
   
-  
-  /**********************************************************************************************/
-  @media screen and (max-width: 390px) {
-    .left-features-items {
-      justify-content: center;
-      gap: 1rem;
-    }
-    .sine-up-form > input {
-      padding: 1rem;
-    }
-    .subs-plan-card {
-      padding: 2rem 1rem;
-    }
-    .subs-plan {
-      gap: 5rem;
-    }
-    .footer-items-container{
-      justify-content: flex-start;
-    }
-  }
