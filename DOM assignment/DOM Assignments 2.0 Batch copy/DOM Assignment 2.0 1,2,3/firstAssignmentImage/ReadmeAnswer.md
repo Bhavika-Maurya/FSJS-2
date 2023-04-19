@@ -20,7 +20,7 @@ const contact = document.getElementsByTagName("li")[2];
 contact.textContent = "Projects";
 
 
-[Task1 Output](task1Output.png)
+[Task1 Output](./task1Output.png)
 
 
 # Task 2
