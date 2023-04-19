@@ -104,13 +104,13 @@ input {
   font-weight: 700;
 }
 
-.hero-left-section h1 span {
+ .hero-left-section h1 span {
   color: rgb(18, 155, 155);
   font-weight: 800;
   font-size: 2.5rem;
   background-color: #dfdfe0;
   padding: 0 15px;
-}
+} 
 
 .hero-left-section p {
   font-weight: 500;
