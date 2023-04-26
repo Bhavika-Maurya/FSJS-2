@@ -11,7 +11,23 @@
  9. [Understanding Media Query](https://bhavikamaurya.hashnode.dev/understanding-media-query) 
 
 # HTML & CSS Projects Link
+ 
+ ### Sample projects 
+ [Project 1]() 
+ [Project 2]()
+ [Project 3]() 
 
+ ### Assignment 
+ [Project 1]() 
+ [Project 2]()
+ [Project 3]() 
+ ### Landing Page Assignment 
+ [Project 1: ]() 
+ [Project 2: ]()
+ [Project 3: ]()
+ [Project 4: ]() 
+ [Project 5: ]()
+ [Project 6: ]() 
 # Tailwind Project Link
 
 # JavaScript Assignment Questions-Answers
@@ -20,3 +36,4 @@
 #### All Dom Assignment answers are in ReadmeAnswers File
 
 # React projects Link 
+
