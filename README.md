@@ -13,21 +13,21 @@
 # HTML & CSS Projects Link
  
  ### Sample projects 
- [Project 1]() 
- [Project 2]()
- [Project 3]() 
+ 1. [Project 1]() 
+ 2. [Project 2]()
+ 3. [Project 3]() 
 
  ### Assignment 
- [Project 1]() 
- [Project 2]()
- [Project 3]() 
+ 1. [Project 1]() 
+ 2. [Project 2]()
+ 3. [Project 3]() 
  ### Landing Page Assignment 
- [Project 1: ]() 
- [Project 2: ]()
- [Project 3: ]()
- [Project 4: ]() 
- [Project 5: ]()
- [Project 6: ]() 
+ 1. [Project 1:]() 
+ 2. [Project 2:]()
+ 3. [Project 3: ]() 
+ 4. [Project 4: ]() 
+ 5. [Project 5: ]()
+ 6. [Project 6: ]() 
 # Tailwind Project Link
 
 # JavaScript Assignment Questions-Answers
