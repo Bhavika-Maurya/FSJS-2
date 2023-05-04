@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,34 +9,35 @@ import {
 import './App.css';
 
 function App() {
-
-  // Tasks (ToDo List) State
   const [toDo, setToDo] = useState([]);
-
-  // Temp State
   const [newTask, setNewTask] = useState('');
   const [updateData, setUpdateData] = useState('');
 
-  // Add task 
-  ////////////////////////////////////////// 
+  // Read data from localStorage on mount
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('toDoList') || '[]');
+    setToDo(data);
+  }, []);
+
+  // Update localStorage whenever toDo state changes
+  useEffect(() => {
+    localStorage.setItem('toDoList', JSON.stringify(toDo));
+  }, [toDo]);
+
   const addTask = () => {
-    if(newTask) {
-      let num = toDo.length + 1; 
-      let newEntry = {id: num, title: newTask, status: false}
+    if (newTask) {
+      const num = toDo.length + 1;
+      const newEntry = { id: num, title: newTask, status: false };
       setToDo([...toDo, newEntry]);
       setNewTask('');
     }
   }
 
-  // Delete task 
-  ////////////////////////////////////////// 
   const deleteTask = (id) => {
-    let newTasks = toDo.filter((task) => task.id !== id);
+    const newTasks = toDo.filter((task) => task.id !== id);
     setToDo(newTasks);
   }
 
-  // mark task as done or completed
-  ////////////////////////////////////////// 
   const markDone = (id) => {
     const newTasks = toDo.map((task) => {
       if (task.id === id){
@@ -47,16 +48,12 @@ function App() {
     setToDo(newTasks);
   }
 
-  // cancel update
-  ////////////////////////////////////////// 
   const cancelUpdate = () => {
     setUpdateData('');
   }
 
-  // Change task for update
-  ////////////////////////////////////////// 
   const changeTask = (e) => {
-    let newEntry = {
+    const newEntry = {
       id: updateData.id,
       title: e.target.value,
       status: updateData.status ? true : false
@@ -64,16 +61,15 @@ function App() {
     setUpdateData(newEntry);
   }
 
-  // update task 
-  ////////////////////////////////////////// 
   const updateTask = () => {
-    let filterRecords = [...toDo].filter( task=>task.id !== updateData.id);
-    let updatedObject = [...filterRecords, updateData];
+    const filterRecords = [...toDo].filter(task => task.id !== updateData.id);
+    const updatedObject = [...filterRecords, updateData];
     setToDo(updatedObject);
     setUpdateData('');
   }
 
-  
+ 
+   
   return (
     <div className="container App">
       
