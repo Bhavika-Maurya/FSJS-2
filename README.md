@@ -13,21 +13,21 @@
 # HTML & CSS Projects Link
  
  ### Sample projects 
-  1. [Project 1](bhavika-project1-seo.netlify.app) 
- 2. [Project 2](bhavika-project2-crypto.netlify.app)
- 3. [Project 3](bhavika-project3-fashionhub.netlify.app) 
+  1. [Project 1](https://bhavika-project1-seo.netlify.app) 
+ 2. [Project 2](https://bhavika-project2-crypto.netlify.app)
+ 3. [Project 3](https://bhavika-project3-fashionhub.netlify.app) 
 
  ### Assignment 
- 1. [Project 1](bhavika-project1-calm.netlify.app) 
- 2. [Project 2](bhavika-project2-medifine.netlify.app)
- 3. [Project 3](bhavika-project3-law.netlify.app) 
+ 1. [Project 1](https://bhavika-project1-calm.netlify.app) 
+ 2. [Project 2](https://bhavika-project2-medifine.netlify.app)
+ 3. [Project 3](https://bhavika-project3-law.netlify.app) 
  ### Landing Page Assignment 
- 1. [Project 1: Credit card Landing page ](project1-creditcard.netlify.app) 
- 2. [Project 2: hosting landing page ](project2-hosting.netlify.app)
- 3. [Project 3: gaming landing page ](project3-gaming.netlify.app) 
- 4. [Project 4: Real estate landing page ](bhavika-project4-real-estate.netlify.app) 
- 5. [Project 5: beat music landing page](project5-beat.netlify.app)
- 6. [Project 6: data-analytics-landing page](project6-real-time-analytics.netlify.app) 
+ 1. [Project 1: Credit card Landing page ](https://project1-creditcard.netlify.app) 
+ 2. [Project 2: hosting landing page ](https://project2-hosting.netlify.app)
+ 3. [Project 3: gaming landing page ](https://project3-gaming.netlify.app) 
+ 4. [Project 4: Real estate landing page ](https://bhavika-project4-real-estate.netlify.app) 
+ 5. [Project 5: beat music landing page](https://project5-beat.netlify.app)
+ 6. [Project 6: data-analytics-landing page](https://project6-real-time-analytics.netlify.app) 
 # Tailwind Project Link
 
 # JavaScript Assignment Questions-Answers
